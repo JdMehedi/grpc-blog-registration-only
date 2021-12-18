@@ -27,10 +27,10 @@ func TestCreate(t *testing.T) {
 		{
 			name:"CREATE_Post_SUCCESS",
 			in: storage.Post{
-				Title: "This is title 2",
-				Description: "This is description 2",
+				Title: "This is title ",
+				Description: "This is description ",
 			},
-			want: 2,
+			wantErr: true,
 		},
 		
 
